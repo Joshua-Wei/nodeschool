@@ -12,6 +12,6 @@ app.post('/form', function (req, res) {
 
 app.listen(process.argv[2]);
 
-function reverse (str) {
+function reverse(str) {
     return str.split('').reverse().join('');
 }

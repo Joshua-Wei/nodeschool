@@ -9,6 +9,6 @@ app.put('/message/:id', function (req, res) {
 
 app.listen(process.argv[2]);
 
-function encrypt (str) {
+function encrypt(str) {
     return crypto.createHash('sha1').update(new Date().toDateString() + str).digest('hex');
 }
