@@ -1,0 +1,51 @@
+For debugging, there are a few more useful methods:
+
+  console.trace(label)
+  console.time(label) / console.timeEnd(label)
+  console.assert(expression, arguments)
+  console.dir(object)
+
+Code linters:
+  jshint
+  eslint
+
+Logging framework:
+  bunyan
+
+Long stacktrace:
+  stackup
+  domain / trycatch
+
+Test framework:
+  tape
+
+Low-lever, built-in support:
+  NODE_DEBUG=http,fs node program.js
+
+Dynamic tracing:
+  DTrace
+  jstrace
+  jtrace
+
+REPL, read-eval-print loop
+  replpad
+  replify
+  repl-client
+
+Built-in debugger
+  debugger statement
+  s/<enter>/n/o/c
+  repl
+  kill -SIGUSR1 <process id>
+  node debug -p <process id>
+
+Debugger UI
+  node-inspector
+
+Resource leaks
+  --trace-gc
+  heapdump
+  kill -SIGUSR2 <process id>
+
+Postmortem debugging
+  gdb, lldb (code triggers a failure in one of the assertions in Node's C++ layer)
